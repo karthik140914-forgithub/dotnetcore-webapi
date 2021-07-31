@@ -4,4 +4,6 @@ WORKDIR /mydotnetapp
 
 COPY . .
 
+RUN chmod a+x DotNetCoreWebAPIForAzureAppService.exe
+
 CMD ["./DotNetCoreWebAPIForAzureAppService.exe"]
