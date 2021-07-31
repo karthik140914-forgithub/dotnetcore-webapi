@@ -4,4 +4,5 @@ WORKDIR /mydotnetapp
 
 COPY . .
 
+EXPOSE 5000
 CMD ["dotnet", "DotNetCoreWebAPIForAzureAppService.dll"]
