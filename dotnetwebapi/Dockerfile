@@ -1,9 +1,7 @@
-FROM mcr.microsoft.com/dotnet/aspnet:3.1
+FROM mcr.microsoft.com/dotnet/sdk:5.0
 
 WORKDIR /mydotnetapp
 
 COPY . .
 
-RUN chmod a+x DotNetCoreWebAPIForAzureAppService.exe
-
-CMD ["./DotNetCoreWebAPIForAzureAppService.exe"]
+CMD ["dotnet", "DotNetCoreWebAPIForAzureAppService.dll"]
