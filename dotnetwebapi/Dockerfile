@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0
+FROM mcr.microsoft.com/dotnet/aspnet:3.1
 
 WORKDIR /mydotnetapp
 
 COPY . .
 
-CMD ["DotNetCoreWebAPIForAzureAppService.exe"]
+CMD ["./DotNetCoreWebAPIForAzureAppService.exe"]
